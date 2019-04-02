@@ -9,7 +9,7 @@ class Navbar extends Component {
             <Link
               to="/"
               style={{
-                fontFamily: "monospace"
+                fontFamily: "Baloo Chettan"
               }}
               className="col s5 brand-logo center black-text"
             >

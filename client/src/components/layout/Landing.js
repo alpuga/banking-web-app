@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import creditcard from "../../img/creditcard.png";
+
 class Landing extends Component {
   componentDidMount() {
     // If logged in, should redirect them to dashboard
@@ -10,6 +11,7 @@ class Landing extends Component {
       this.props.history.push("/dashboard");
     }
   }
+
   render() {
     return (
       <div style={{ height: "75vh" }} className="container valign-wrapper">
@@ -23,7 +25,7 @@ class Landing extends Component {
             />
             <h4 className="flow-text">
               <b>Build</b> a personal banking web app with Plaid and the{" "}
-              <span style={{ fontFamily: "monospace" }}>MERN</span> stack
+              <span style={{ fontFamily: "Baloo Chettan" }}>MERN</span> stack
             </h4>
             <br />
             <div className="col s6">

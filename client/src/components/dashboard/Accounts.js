@@ -66,6 +66,7 @@ class Accounts extends Component {
       { title: "Amount", field: "amount" },
       { title: "Category", field: "category" }
     ];
+
     let transactionsData = [];
     transactions.forEach(function(account) {
       account.transactions.forEach(function(transaction) {
@@ -104,7 +105,7 @@ class Accounts extends Component {
           <PlaidLinkButton
             buttonProps={{
               className:
-                "btn btn-large waves-effect waves-light hoverable blue accent-3 main-btn"
+                "btn btn-large waves-effect waves-light hoverable red accent-3 main-btn"
             }}
             plaidLinkProps={{
               clientName: "BANKING",
