@@ -1,11 +1,10 @@
 import axios from "axios";
+import { getTransactions } from "./transactionActions";
 import {
   ADD_ACCOUNT,
   DELETE_ACCOUNT,
   GET_ACCOUNTS,
-  ACCOUNTS_LOADING,
-  GET_TRANSACTIONS,
-  TRANSACTIONS_LOADING
+  ACCOUNTS_LOADING
 } from "./types";
 
 // Add account
