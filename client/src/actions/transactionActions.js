@@ -1,9 +1,5 @@
 import axios from "axios";
-import {
-  ACCOUNTS_LOADING,
-  GET_TRANSACTIONS,
-  TRANSACTIONS_LOADING
-} from "./types";
+import { GET_TRANSACTIONS, TRANSACTIONS_LOADING } from "./types";
 
 // Get Transactions
 export const getTransactions = plaidData => dispatch => {
@@ -23,6 +19,7 @@ export const getTransactions = plaidData => dispatch => {
       })
     );
 };
+
 // Transactions loading
 export const setTransactionsLoading = () => {
   return {
