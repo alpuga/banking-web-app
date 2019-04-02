@@ -2,3 +2,4 @@
 .jshintrc
 package-lock.json
 /config/keys_dev.js
+/config/keys_plaid.js
