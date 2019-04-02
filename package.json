@@ -1,0 +1,46 @@
+{
+  "name": "bankapp",
+  "version": "1.0.0",
+  "description": "MERN with Plaid's API",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alpuga/banking-web-app.git"
+  },
+  "keywords": [
+    "MongoDB",
+    "Express",
+    "React",
+    "Redux",
+    "Node"
+  ],
+  "author": "Alex Puga",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alpuga/banking-web-app/issues"
+  },
+  "homepage": "https://github.com/alpuga/banking-web-app#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "moment": "^2.24.0",
+    "mongoose": "^5.4.12",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "plaid": "^3.1.1",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
