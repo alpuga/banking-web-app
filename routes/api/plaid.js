@@ -106,9 +106,12 @@ router.post(
   (req, res) => {
     const now = moment();
     const today = now.format("YYYY-MM-DD");
-    const thirtyDaysAgo = now.subtract(30, "days").format("YYYY-MM-DD"); // Change this if you want more transactions
+    const thirtyDaysAgo = now.subtract(30, "days").format("YYYY-MM-DD");
+
     let transactions = [];
+
     const accounts = req.body;
+
     if (accounts) {
       accounts.forEach(function(account) {
         ACCESS_TOKEN = account.accessToken;
@@ -120,6 +123,7 @@ router.post(
               accountName: institutionName,
               transactions: response.transactions
             });
+
             // Don't send back response till all transactions have been added
             if (transactions.length === accounts.length) {
               res.json(transactions);
