@@ -60,7 +60,10 @@ router.post(
                   institutionName: name
                 });
 
-                newAccount.save().then(account => res.json(account));
+                newAccount
+                  .save()
+                  .then(account => account) //res.json(account)
+                  .catch(err => console.log(err));
               }
             })
             .catch(err => console.log(err)); // Mongo Error
