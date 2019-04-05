@@ -3,11 +3,15 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const passport = require("passport");
 const path = require("path");
+const favicon = require("express-favicon");
 
 const users = require("./routes/api/users");
 const plaid = require("./routes/api/plaid");
 
 const app = express();
+
+// Express favicon
+app.use(favicon(__dirname + "/client/public/favicon.ico"));
 
 // Bodyparser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
