@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
 import { getAccounts, addAccount } from "../../actions/accountActions";
 import Accounts from "./Accounts";
-import { plaidPublicKey } from "../../plaid-keys/plaid-keys";
+//import { plaidPublicKey } from "../../plaid-keys/plaid-keys";
 import Spinner from "./Spinner";
 
 class Dashboard extends Component {
@@ -59,7 +59,7 @@ class Dashboard extends Component {
                 }}
                 plaidLinkProps={{
                   clientName: "BANKING", // YOUR_APP_NAME
-                  key: plaidPublicKey, // plaidPublicKey
+                  key: "4508d464022e7606f19a772439b37c", // plaidPublicKey
                   env: "sandbox",
                   product: ["transactions"],
                   onSuccess: this.handleOnSuccess
