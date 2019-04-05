@@ -1,6 +1,9 @@
 {
   "name": "bankapp",
   "version": "1.0.0",
+  "engines": {
+    "node": "^11.9.0"
+  },
   "description": "MERN with Plaid's API",
   "main": "server.js",
   "scripts": {
