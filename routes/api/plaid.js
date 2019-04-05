@@ -62,7 +62,7 @@ router.post(
 
                 newAccount
                   .save()
-                  .then(account => account) //res.json(account)
+                  .then(account => res.json(account))
                   .catch(err => console.log(err));
               }
             })
