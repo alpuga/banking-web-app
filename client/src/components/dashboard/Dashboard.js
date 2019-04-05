@@ -19,7 +19,7 @@ class Dashboard extends Component {
     this.props.logoutUser();
   };
 
-  // Add account
+  // Add Account
   handleOnSuccess = (token, metadata) => {
     const plaidData = {
       public_token: token,
