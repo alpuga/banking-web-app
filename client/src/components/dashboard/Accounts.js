@@ -6,7 +6,7 @@ import { addAccount, deleteAccount } from "../../actions/accountActions";
 import { getTransactions } from "../../actions/transactionActions";
 import { logoutUser } from "../../actions/authActions";
 import MaterialTable from "material-table"; // https://mbrn.github.io/material-table/#/
-import { plaidPublicKey } from "../../plaid-keys/plaid-keys";
+//import { plaidPublicKey } from "../../plaid-keys/plaid-keys";
 
 class Accounts extends Component {
   componentDidMount() {

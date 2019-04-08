@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
 import { getAccounts, addAccount } from "../../actions/accountActions";
 import Accounts from "./Accounts";
-import { plaidPublicKey } from "../../plaid-keys/plaid-keys";
+//import { plaidPublicKey } from "../../plaid-keys/plaid-keys";
 import Spinner from "./Spinner";
 
 class Dashboard extends Component {
