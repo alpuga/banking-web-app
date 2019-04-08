@@ -21,6 +21,7 @@ export const addAccount = plaidData => dispatch => {
     .then(data =>
       accounts ? dispatch(getTransactions(accounts.concat(data.payload))) : null
     )
+
     .catch(err => console.log(err));
 };
 
