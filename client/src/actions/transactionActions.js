@@ -3,7 +3,6 @@ import { GET_TRANSACTIONS, TRANSACTIONS_LOADING } from "./types";
 
 // Get Transactions
 export const getTransactions = plaidData => dispatch => {
-  console.log("getting transactions...");
   dispatch(setTransactionsLoading());
   axios
     .post("/api/plaid/accounts/transactions", plaidData)

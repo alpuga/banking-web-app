@@ -27,6 +27,7 @@ class Dashboard extends Component {
     };
 
     this.props.addAccount(plaidData);
+    window.location.reload();
   };
 
   render() {

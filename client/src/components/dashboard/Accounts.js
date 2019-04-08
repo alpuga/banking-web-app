@@ -24,6 +24,7 @@ class Accounts extends Component {
     };
 
     this.props.addAccount(plaidData);
+    window.location.reload();
   };
 
   // Delete account
