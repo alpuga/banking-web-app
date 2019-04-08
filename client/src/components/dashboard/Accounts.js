@@ -111,7 +111,7 @@ class Accounts extends Component {
             }}
             plaidLinkProps={{
               clientName: "BANKING", // YOUR_APP_NAME
-              key: plaidPublicKey, // plaidPublicKey
+              key: "4508d464022e7606f19a772439b37c", // plaidPublicKey
               env: "sandbox",
               product: ["transactions"],
               onSuccess: this.handleOnSuccess
