@@ -1,55 +1,55 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
-import creditcard from "../../img/creditcard.png";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import creditcard from '../../img/creditcard.png';
 
 class Landing extends Component {
   componentDidMount() {
     // If logged in, should redirect them to dashboard
     if (this.props.auth.isAuthenticated) {
-      this.props.history.push("/dashboard");
+      this.props.history.push('/dashboard');
     }
   }
 
   render() {
     return (
-      <div style={{ height: "75vh" }} className="container valign-wrapper">
-        <div className="row">
-          <div className="col s12 center-align">
+      <div style={{ height: '75vh' }} className='container valign-wrapper'>
+        <div className='row'>
+          <div className='col s12 center-align'>
             <img
               src={creditcard}
-              style={{ width: "350px" }}
-              className="responsive-img credit-card"
-              alt="Undraw"
+              style={{ width: '350px' }}
+              className='responsive-img credit-card'
+              alt='Undraw'
             />
-            <h4 className="flow-text">
-              <b>Build</b> a personal banking web app with Plaid and the{" "}
-              <span style={{ fontFamily: "Baloo Chettan" }}>MERN</span> stack
+            <h4 className='flow-text'>
+              A <b>personal</b> banking web app with Plaid and the{' '}
+              <span style={{ fontFamily: 'Baloo Chettan' }}>MERN</span> stack
             </h4>
             <br />
-            <div className="col s6">
+            <div className='col s6'>
               <Link
-                to="/register"
+                to='/register'
                 style={{
-                  width: "140px",
-                  borderRadius: "3px",
-                  letterSpacing: "1.5px"
+                  width: '140px',
+                  borderRadius: '3px',
+                  letterSpacing: '1.5px'
                 }}
-                className="btn btn-large waves-effect waves-light hoverable red accent-3"
+                className='btn btn-large waves-effect waves-light hoverable red accent-3'
               >
                 Register
               </Link>
             </div>
-            <div className="col s6">
+            <div className='col s6'>
               <Link
-                to="/login"
+                to='/login'
                 style={{
-                  width: "140px",
-                  borderRadius: "3px",
-                  letterSpacing: "1.5px"
+                  width: '140px',
+                  borderRadius: '3px',
+                  letterSpacing: '1.5px'
                 }}
-                className="btn btn-large waves-effect waves-light hoverable white black-text"
+                className='btn btn-large waves-effect waves-light hoverable white black-text'
               >
                 Log In
               </Link>
